@@ -28,12 +28,14 @@ namespace roupaboxx
                         varCli.cadCliente();
                         break;
                     case 2:
+                        varCli.listarClientes();
                         break;
                     case 3:
 
                         varPro.cadProduto();
                         break;
                     case 4:
+                        varPro.listarProdutos();
                         break;
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Roupabox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace roupaboxx
 {
     internal class Cliente
     {
+        List<ClienteCad>listaCliente= new List<ClienteCad>();
+
         public void cadCliente()
         {
             Console.Clear();
@@ -176,11 +179,30 @@ namespace roupaboxx
             ExibirMenu menu = new ExibirMenu();
             //menu.Menu();
 
-            foreach (var cliente  in )
-            {
+           
 
+        }
+        public void listarClientes()
+        {
+            Console.Clear();
+            Console.WriteLine("lista de produtos cadastrados");
+
+
+            foreach (var cliente in listaCliente)
+            {
+                Console.WriteLine($"marca: {cliente.nomeCli}, " + $"CPF: {cliente.cpfCli}," 
+                    + $"cep: {cliente.cepCli}," + $"cidade: {cliente.cidCli},");
             }
 
+            Console.WriteLine("\n digite uma tecla para voltar ao menu principal");
+            Console.ReadKey();
+            Console.Clear();
+
+            cabec variavelCabecalho = new cabec();
+            variavelCabecalho.cabecalho();
+
+            Cliente varpro = new Cliente();
+            ExibirMenu VariaveMenu = new ExibirMenu();
         }
     }
 

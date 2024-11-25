@@ -22,9 +22,5 @@ namespace roupaboxx
         public string estCli    {get; set; }// Estado --  string   -- estCli  -- ser somente 2 dígitos
         public int cepCli       {get; set; }// CEP --  int  -- cepCli -- 8 dígitos 
 
-
-
-
-
     }
 }           
